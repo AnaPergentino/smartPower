@@ -3,14 +3,31 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TelaInicialComponent } from './tela-inicial/tela-inicial.component';
+
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatButtonModule } from '@angular/material/button';
+import { ControlarGastosComponent } from './controlar-gastos/controlar-gastos.component';
+import { ControlarLampadasComponent } from './controlar-lampadas/controlar-lampadas.component';
+import { ControlarTomadasComponent } from './controlar-tomadas/controlar-tomadas.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TelaInicialComponent,
+    ControlarGastosComponent,
+    ControlarLampadasComponent,
+    ControlarTomadasComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatButtonModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,31 @@
+<div class="container">
+    <div>
+        <canvas
+            baseChart
+            [chartType]="'line'"
+            [datasets]="chartData"
+            [labels]="chartLabels"
+            [options]="chartOptions"
+            [legend]="true"
+            (chartClick)="onChartClick($event)">
+        </canvas>
+    </div>
+    <div>
+      <canvas baseChart
+        [data]="pieChartData"
+        [labels]="pieChartLabels"
+        [chartType]="pieChartType"
+        [options]="pieChartOptions"
+        [colors]="pieChartColors"
+        [legend]="pieChartLegend">
+      </canvas>
+    </div>
+    <mat-grid-list cols="12" rowHeight="100px">
+        <mat-grid-tile [colspan] = "6">
+            <button mat-raised-button>Gastos Tomadas</button>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan] = "6">
+            <button mat-raised-button>Gastos Lâmpadas</button>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

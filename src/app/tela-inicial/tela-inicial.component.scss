@@ -1,0 +1,23 @@
+.inicio {
+	background-color: #ffffff;
+	width: 750px;
+	height: 1334px;
+	opacity: 80%;
+/* 	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center; */
+
+	.titulo_inicial {
+		font-size: 80px;
+		text-align: center;
+		color: #AEDCFB;
+		text-shadow: 2px 2px #478BC9;
+
+	}
+	button {
+		color: #AEDCFB;
+		background-color: #478BC9;
+	}
+}
