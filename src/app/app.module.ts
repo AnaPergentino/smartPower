@@ -13,6 +13,9 @@ import { ControlarLampadasComponent } from './controlar-lampadas/controlar-lampa
 import { ControlarTomadasComponent } from './controlar-tomadas/controlar-tomadas.component';
 import { ChartsModule } from 'ng2-charts';
 import { MatIconModule } from '@angular/material/icon';
+import { LampadaDetalhadaComponent } from './lampada-detalhada/lampada-detalhada.component';
+import { TomadaDetalhadaComponent } from './tomada-detalhada/tomada-detalhada.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,9 @@ import { MatIconModule } from '@angular/material/icon';
     TelaInicialComponent,
     ControlarGastosComponent,
     ControlarLampadasComponent,
-    ControlarTomadasComponent
+    ControlarTomadasComponent,
+    LampadaDetalhadaComponent,
+    TomadaDetalhadaComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatGridListModule,
     MatButtonModule,
     ChartsModule,
-    MatIconModule
+    MatIconModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

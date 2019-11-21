@@ -8,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class ControlarLampadasComponent implements OnInit {
 
   constructor() { }
+  lampadaSelecionada;
+  controlarLampada = false;
+  lampadas = ['lampada1', 'lampada2', 'lampada3', 'lampada4', 'lampada5']
 
   ngOnInit() {
   }
   abrirLampada(lampada){
-    console.log(lampada)
-  }
+    this.controlarLampada = true;
+    this.lampadaSelecionada = lampada;  }
 }

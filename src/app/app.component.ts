@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,13 +9,20 @@ import { Router } from '@angular/router';
   providers: [Location, {provide: LocationStrategy, useClass: PathLocationStrategy}]
 
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
   title = 'smart-power';
   constructor(private location: Location,
     private router: Router) 
   {}
-
+  ngOnInit() {
+      this.router.events.subscribe((evt) => {
+          if (!(evt instanceof NavigationEnd)) {
+              return;
+          }
+          window.scrollTo(0, 0)
+      });
+  }
   voltar() {
     this.location.back();
   }
