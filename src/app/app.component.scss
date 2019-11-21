@@ -1,4 +1,13 @@
-button {
-    color: #AEDCFB;
-    background-color: #478BC9;
+
+.componente {
+    margin-top: 50px;
+    width: 750px;
+    height: 1334px;
+    button {
+        color: #ffffff;
+        background-color: #478BC9;
+        position: absolute;
+        right: 30px;
+        margin: 10;
+    }
 }

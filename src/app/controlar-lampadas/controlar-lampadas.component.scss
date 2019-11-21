@@ -1,0 +1,72 @@
+.container {
+	background-color: #478bc9;
+	width: 750px;
+	height: 1334px;
+    opacity: 80%;
+    color: #fff;
+}
+img {
+    margin: 0 auto;
+    position: relative;
+}
+button {
+    color: #ffffff;
+    background-color: #478BC9;
+}
+.titulo {
+    font-size: 40px;
+    text-align: center;
+    color: #AEDCFB;
+    text-shadow: 2px 2px #478BC9;
+
+}
+.lampada1 {
+    float: left;
+    position: absolute;
+    left: 240px;
+    top: 200px;
+    z-index: 1000;
+    padding: 1px;
+    color: #FFFFFF;
+    background-color: #6BA2D3;
+}
+.lampada2 {
+    float: left;
+    position: absolute;
+    left: 360px;
+    top: 200px;
+    z-index: 1000;
+    padding: 1px;
+    color: #FFFFFF;
+    background-color: #6BA2D3;
+}
+.lampada3 {
+    float: left;
+    position: absolute;
+    left: 480px;
+    top: 200px;
+    z-index: 1000;
+    padding: 1px;
+    color: #FFFFFF;
+    background-color: #6BA2D3;
+}
+.lampada4 {
+    float: left;
+    position: absolute;
+    left: 300px;
+    top: 390px;
+    z-index: 1000;
+    padding: 1px;
+    color: #FFFFFF;
+    background-color: #6BA2D3;
+}
+.lampada5 {
+    float: left;
+    position: absolute;
+    left: 490px;
+    top: 390px;
+    z-index: 1000;
+    padding: 1px;
+    color: #FFFFFF;
+    background-color: #6BA2D3;
+}

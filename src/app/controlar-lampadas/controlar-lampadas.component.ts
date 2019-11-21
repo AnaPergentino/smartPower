@@ -11,5 +11,7 @@ export class ControlarLampadasComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  abrirLampada(lampada){
+    console.log(lampada)
+  }
 }

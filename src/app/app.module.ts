@@ -12,6 +12,7 @@ import { ControlarGastosComponent } from './controlar-gastos/controlar-gastos.co
 import { ControlarLampadasComponent } from './controlar-lampadas/controlar-lampadas.component';
 import { ControlarTomadasComponent } from './controlar-tomadas/controlar-tomadas.component';
 import { ChartsModule } from 'ng2-charts';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ChartsModule } from 'ng2-charts';
     BrowserAnimationsModule,
     MatGridListModule,
     MatButtonModule,
-    ChartsModule
+    ChartsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
