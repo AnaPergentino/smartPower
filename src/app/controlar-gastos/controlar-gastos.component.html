@@ -1,7 +1,7 @@
 <div class="container">
-<button mat-raised-button (click)="voltar()">Voltar</button>
+    <button mat-raised-button routerLink="/" routerLinkActive="active">Voltar</button>
 
-<h1 class="titulo">Gastos</h1>
+    <h1 class="titulo">Gastos</h1>
     <div>
         <canvas
             baseChart
@@ -25,10 +25,10 @@
     </div>
     <mat-grid-list cols="12" rowHeight="100px">
         <mat-grid-tile [colspan] = "6">
-            <button mat-raised-button>Gastos Tomadas</button>
+            <button mat-raised-button routerLink="/gastos-tomadas" routerLinkActive="active">Gastos Tomadas</button>
         </mat-grid-tile>
         <mat-grid-tile [colspan] = "6">
-            <button mat-raised-button>Gastos Lâmpadas</button>
+            <button mat-raised-button routerLink="/gastos-lampadas" routerLinkActive="active">Gastos Lâmpadas</button>
         </mat-grid-tile>
     </mat-grid-list>
 </div>

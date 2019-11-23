@@ -4,15 +4,15 @@ import { TelaInicialComponent } from './tela-inicial/tela-inicial.component';
 import { ControlarGastosComponent } from './controlar-gastos/controlar-gastos.component';
 import { ControlarLampadasComponent } from './controlar-lampadas/controlar-lampadas.component';
 import { ControlarTomadasComponent } from './controlar-tomadas/controlar-tomadas.component';
-/* import { LampadaDetalhadaComponent } from './lampada-detalhada/lampada-detalhada.component';
-import { TomadaDetalhadaComponent } from './tomada-detalhada/tomada-detalhada.component'; */
+import { GastosTomadasComponent } from './gastos-tomadas/gastos-tomadas.component';
+import { GastosLampadasComponent } from './gastos-lampadas/gastos-lampadas.component';
 
 const routes: Routes = [
   { path: '', component: TelaInicialComponent },
   { path: 'tomadas', component: ControlarTomadasComponent },
   { path: 'lampadas', component: ControlarLampadasComponent },
-/*   { path: 'tomada', component: TomadaDetalhadaComponent },
-  { path: 'lampada', component: LampadaDetalhadaComponent }, */
+   { path: 'gastos-tomadas', component: GastosTomadasComponent },
+  { path: 'gastos-lampadas', component: GastosLampadasComponent }, 
   { path: 'gastos', component: ControlarGastosComponent },
 ];
 

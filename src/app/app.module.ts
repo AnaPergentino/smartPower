@@ -19,6 +19,10 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatRadioModule } from '@angular/material/radio';
 import { FormsModule } from '@angular/forms';
 import { IgxTimePickerModule } from "igniteui-angular";
+import { GastosTomadasComponent } from './gastos-tomadas/gastos-tomadas.component';
+import { GastosLampadasComponent } from './gastos-lampadas/gastos-lampadas.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,9 @@ import { IgxTimePickerModule } from "igniteui-angular";
     ControlarLampadasComponent,
     ControlarTomadasComponent,
     LampadaDetalhadaComponent,
-    TomadaDetalhadaComponent
+    TomadaDetalhadaComponent,
+    GastosTomadasComponent,
+    GastosLampadasComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +47,9 @@ import { IgxTimePickerModule } from "igniteui-angular";
     MatSlideToggleModule,
     MatRadioModule,
     FormsModule,
-    IgxTimePickerModule
+    IgxTimePickerModule,
+    MatCardModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
