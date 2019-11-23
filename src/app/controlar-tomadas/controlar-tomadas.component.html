@@ -1,9 +1,10 @@
 <div class="container">
-    <h1 class="titulo">Tomadas</h1>
+    <button mat-raised-button *ngIf="controlarTomada" (click)="controlarTomada=!controlarTomada">Voltar</button>
+    <button mat-raised-button *ngIf="!controlarTomada" routerLink="/" routerLinkActive="active">Voltar</button>
+    <h1 class="titulo">Tomada<span *ngIf="!controlarTomada">s</span></h1>
     <div *ngIf="!controlarTomada">
         <mat-grid-list cols="12" rowHeight="100px">
             <mat-grid-tile [colspan] = "12" [rowspan]="4">
-
                 <img src="../../assets/images/planta.png" alt="Planta" width="400" height="400">
             </mat-grid-tile>
             <mat-grid-tile [colspan] = "12">
@@ -11,11 +12,11 @@
             </mat-grid-tile>
         </mat-grid-list>
         <div *ngFor="let tomada of tomadas">
-            <button mat-icon-button [ngClass]="tomada" (click)="abrirTomada(tomada)">
+            <button mat-icon-button [ngClass]="defineClasse(tomada)" (click)="abrirTomada(tomada)">
                 <mat-icon><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9 16h2V8H9v8zm3-14C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1-4h2V8h-2v8z"/></svg></mat-icon>
             </button>
         </div>
     </div>
-    <app-tomada-detalhada [tomada]="tomadaSelecionada" (tomadaAtiva)="tomada" *ngIf="controlarTomada">
+    <app-tomada-detalhada [tomada]="tomadaSelecionada" (tomadaAtiva)="trocarEstado($event)" *ngIf="controlarTomada">
     </app-tomada-detalhada>
 </div>

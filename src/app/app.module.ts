@@ -16,6 +16,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { LampadaDetalhadaComponent } from './lampada-detalhada/lampada-detalhada.component';
 import { TomadaDetalhadaComponent } from './tomada-detalhada/tomada-detalhada.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatRadioModule } from '@angular/material/radio';
+import { FormsModule } from '@angular/forms';
+import { IgxTimePickerModule } from "igniteui-angular";
 
 @NgModule({
   declarations: [
@@ -35,9 +38,13 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     MatButtonModule,
     ChartsModule,
     MatIconModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatRadioModule,
+    FormsModule,
+    IgxTimePickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

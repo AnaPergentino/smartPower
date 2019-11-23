@@ -24,7 +24,7 @@ button {
     float: left;
     position: absolute;
     left: 240px;
-    top: 200px;
+    top: 300px;
     z-index: 1000;
     padding: 1px;
     color: #FFFFFF;
@@ -34,7 +34,7 @@ button {
     float: left;
     position: absolute;
     left: 360px;
-    top: 200px;
+    top: 300px;
     z-index: 1000;
     padding: 1px;
     color: #FFFFFF;
@@ -44,7 +44,7 @@ button {
     float: left;
     position: absolute;
     left: 480px;
-    top: 200px;
+    top: 300px;
     z-index: 1000;
     padding: 1px;
     color: #FFFFFF;
@@ -54,7 +54,7 @@ button {
     float: left;
     position: absolute;
     left: 300px;
-    top: 390px;
+    top: 490px;
     z-index: 1000;
     padding: 1px;
     color: #FFFFFF;
@@ -64,9 +64,12 @@ button {
     float: left;
     position: absolute;
     left: 490px;
-    top: 390px;
+    top: 490px;
     z-index: 1000;
     padding: 1px;
     color: #FFFFFF;
     background-color: #6BA2D3;
+}
+._ligada {
+    background-color: #72C79A !important;
 }

@@ -1,6 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
-/*background-color: #52426A; #478BC9; #AEDCFB*/
+/*background-color: #52426A; #478BC9; #AEDCFB
+#59A2C4
+#C9DFB5
+#72C79A
+*/
+@import '~igniteui-angular/lib/core/styles/themes/index';
+@include igx-core();
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif !important; }
 @import '~@angular/material/theming';
+$primary-color: #C9DFB5; // Some green shade I like
+$secondary-color: #59A2C4; // Watermelon pink
+
+$my-color-palette: igx-palette(
+    $primary: $primary-color,
+    $secondary: $secondary-color
+);
+@include igx-theme($my-color-palette);

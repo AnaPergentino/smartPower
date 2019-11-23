@@ -1,1 +1,10 @@
-<mat-slide-toggle>Slide me!</mat-slide-toggle>
+<div class='container'>
+    <mat-slide-toggle [checked]="lampada.ativo" (change)="trocarEstado()">{{lampada.ativo ? "Ligada" : "Desligada"}}</mat-slide-toggle>
+    <p class="titulo_secao">Consumo Médio</p>
+    <p class="conteudo_secao">{{lampada.consumoMedio}}</p>
+    <p class="titulo_secao">Programar Timer</p>
+    <igx-time-picker id="time-picker" class="hora"></igx-time-picker>
+    <igx-time-picker id="time-picker"></igx-time-picker>
+
+</div>
+    

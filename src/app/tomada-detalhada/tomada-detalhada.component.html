@@ -1,1 +1,11 @@
-<p>tomada-detalhada works!</p>
+<div class='container'>
+    <mat-slide-toggle [checked]="tomada.ativo" (change)="trocarEstado()">{{tomada.ativo ? "Ligada" : "Desligada"}}</mat-slide-toggle>
+    <p class="titulo_secao">Consumo Médio</p>
+    <p class="conteudo_secao">{{tomada.consumoMedio}}</p>
+    <p class="titulo_secao">Fator de Risco</p>
+    <mat-radio-group [(ngModel)]="tomada.fatorRisco">
+        <mat-radio-button class="botao_fator_risco" *ngFor="let risco of fatoresRiscos" [value]="risco">
+            {{risco}}
+        </mat-radio-button>
+    </mat-radio-group>
+</div>

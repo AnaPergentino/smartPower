@@ -12,5 +12,9 @@ export class LampadaDetalhadaComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  trocarEstado(){
+    this.lampada.ativo = !this.lampada.ativo;
+    console.log(this.lampada.ativo)
+    this.lampadaAtiva.emit(this.lampada);
+  }
 }
