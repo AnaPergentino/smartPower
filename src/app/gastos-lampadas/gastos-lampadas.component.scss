@@ -1,5 +1,5 @@
 .container {
-	background-color: #478bc9;
+	background-color: #C9DFB5;
 	width: 750px;
 	height: 1334px;
     opacity: 80%;
@@ -14,10 +14,10 @@ button {
     text-align: center;
     color: #AEDCFB;
     text-shadow: 2px 2px #478BC9;
-
+    margin-bottom: 10px;
 }
 ::ng-deep .mat-progress-bar-fill::after {
-    background-color: #72C79A;
+    background-color: #478BC9;
 }
 
 ::ng-deep .mat-progress-bar-buffer {
@@ -26,7 +26,12 @@ button {
 .cartao{
     margin:10px;
     padding:10px;
-    outline: 1px solid #72C79A;
-    background-color: #59A2C4;
+    //outline: 2px solid #72C79A;
+    background-color: #72C79A;
+    border-radius: 10px;
 
+}
+.titulo_secao{
+    font-size: 30px;
+    margin-left: 20px;
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SmartPowerServiceService } from '../smart-power-service.service'
 
 @Component({
   selector: 'app-controlar-lampadas',
@@ -8,16 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class ControlarLampadasComponent implements OnInit {
   lampadaSelecionada;
   controlarLampada = false;
-  lampadas = [
-    {nome: 'lampada1', ativo: false, consumoMedio: "X kw", timerLigar: new Date(Date.now()), timerDesligar: new Date(Date.now())},
-    {nome: 'lampada2', ativo: false, consumoMedio: "X kw", timerLigar: new Date(Date.now()), timerDesligar: new Date(Date.now())},
-    {nome: 'lampada3', ativo: false, consumoMedio: "X kw", timerLigar: new Date(Date.now()), timerDesligar: new Date(Date.now())},
-    {nome: 'lampada4', ativo: false, consumoMedio: "X kw", timerLigar: new Date(Date.now()), timerDesligar: new Date(Date.now())},
-    {nome: 'lampada5', ativo: false, consumoMedio: "X kw", timerLigar: new Date(Date.now()), timerDesligar: new Date(Date.now())},
-  ]
-  constructor() { }
+  lampadas = []
+  constructor(private servico: SmartPowerServiceService) { }
 
   ngOnInit() {
+    this.lampadas = this.servico.lampadas;
   }
   abrirLampada(lampada){
     this.controlarLampada = true;
@@ -33,6 +29,10 @@ export class ControlarLampadasComponent implements OnInit {
   trocarEstado(lampadaAlterada){
     let index = this.lampadas.indexOf(lampadaAlterada);
     this.lampadas[index] = lampadaAlterada;
+    this.atualizaLampadasServico()
+  }
+  atualizaLampadasServico() {
+    this.servico.lampadas = this.lampadas;
   }
 }
 export interface Lampada{

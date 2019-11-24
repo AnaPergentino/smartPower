@@ -10,8 +10,8 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif !important; }
 @import '~@angular/material/theming';
-$primary-color: #C9DFB5; // Some green shade I like
-$secondary-color: #59A2C4; // Watermelon pink
+$primary-color: #59A2C4; // Some green shade I like
+$secondary-color: #72C79A; // Watermelon pink
 
 $my-color-palette: igx-palette(
     $primary: $primary-color,
