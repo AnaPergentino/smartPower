@@ -23,6 +23,7 @@ import { GastosTomadasComponent } from './gastos-tomadas/gastos-tomadas.componen
 import { GastosLampadasComponent } from './gastos-lampadas/gastos-lampadas.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     FormsModule,
     IgxTimePickerModule,
     MatCardModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
